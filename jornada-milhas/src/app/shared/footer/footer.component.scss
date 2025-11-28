@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer{
+    background-color: black;
+    width: 100%;
+}
+
+.footer-content{
+    padding: 2.5em 15em;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-company, .follow-us{
+    max-width: 40%;
+}
+
+.follow-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.follow-us h2{
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.about-company img{
+    max-width: 11em;
+}
+
+.follow-us ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 6em;
+    justify-content: space-between;
+}
