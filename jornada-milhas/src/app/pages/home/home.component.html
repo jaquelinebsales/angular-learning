@@ -3,6 +3,9 @@
     <h1>HOME</h1>
 </app-container>
 <app-container>
+  <app-form-busca></app-form-busca>
+</app-container>
+<app-container>
   <h2>Promoções</h2>
   <div class="card-wrapper">
     <app-card-busca></app-card-busca>
@@ -13,5 +16,9 @@
     <app-card-busca></app-card-busca>
   </div>
   <h2>Depoimentos</h2>
-    <app-card-depoimentos></app-card-depoimentos>
+    <section class="depoiments">
+      <app-card-depoimentos userPhoto = "../../../assets/imagens/avatar3.png" Comment="Quero deixar aqui o meu agradecimento mais sincero pelo trabalho excepcional que fizeram na organização da minha última viagem. Do primeiro contato até o retorno, foi uma experiência impecável e sem preocupações!" userName="Janja Silva"></app-card-depoimentos>
+      <app-card-depoimentos userPhoto = "../../../assets/imagens/avatar3.png" Comment="Tudo foi muito bem planejado, com cronograma flexível e um suporte durante toda a viagem. Saber que poderia contar com vocês a qualquer momento trouxe uma tranquilidade enorme." userName="Janja Silva"></app-card-depoimentos>
+      <app-card-depoimentos userPhoto = "../../../assets/imagens/avatar3.png" Comment="Vocês não apenas vendem pacotes de viagem, mas criam experiências memoráveis! Com certeza indicarei para todos os meus amigos e familiares, e mal posso esperar para planejar a próxima aventura com o apoio de vocês." userName="Janja Silva"></app-card-depoimentos>
+    </section>
 </app-container>
