@@ -1,0 +1,17 @@
+.container{
+  background-color: var(--white-pink);
+  border-radius: 5px;
+  width: 280px;
+  height: 240px;
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  gap: 10px;
+  box-shadow: 3px 3px 8px rgb(206, 206, 206);
+
+  .comment span{
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,39 @@
+.form-busca {
+  margin: 40px 0;
+  display: block;
+
+  .flex-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 16px 0;
+  }
+
+  .horizontal-chips {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    gap: 8px;
+  }
+
+  .input-container {
+    margin-bottom: -1.25em;
+  }
+
+  .mat-button-toggle-checked {
+    background-color: #F7F2FA;
+  }
+
+  mat-button-toggle {
+    text-transform: uppercase;
+  }
+
+  .mat-button-toggle-label-content {
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+}
