@@ -6,7 +6,7 @@
         <mat-button-toggle>ida e volta</mat-button-toggle>
         <mat-button-toggle>somente ida</mat-button-toggle>
       </mat-button-toggle-group>
-      <mat-chip-listbox class="horizontal-chips" aria-label="Color selection">
+      <mat-chip-listbox (click)="openDialog()" class="horizontal-chips" aria-label="Color selection">
         @for (chip of availableColors; track chip) {
           <mat-chip-option selected [color]="chip.color">{{chip.name}}</mat-chip-option>
         }

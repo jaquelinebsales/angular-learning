@@ -9,6 +9,14 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { provideNativeDateAdapter } from '@angular/material/core';
 import { MatButtonModule } from '@angular/material/button';
+import {
+  MatDialog,
+  MatDialogActions,
+  MatDialogClose,
+  MatDialogContent,
+  MatDialogTitle,
+} from '@angular/material/dialog';
+import { ModalComponent } from '../modal/modal.component';
 
 export interface ChipColor {
   name: string;
@@ -27,7 +35,11 @@ export interface ChipColor {
             MatInputModule,
             MatIconModule,
             MatDatepickerModule,
-            MatButtonModule
+            MatButtonModule,
+            MatDialogTitle,
+            MatDialogContent,
+            MatDialogActions,
+            MatDialogClose
   ],
   templateUrl: './form-busca.component.html',
   styleUrl: './form-busca.component.scss',
@@ -35,6 +47,11 @@ export interface ChipColor {
 })
 
 export class FormBuscaComponent {
+  constructor(public dialog: MatDialog) {}
+  openDialog() {
+    this.dialog.open(ModalComponent);
+  }
+
   availableColors: ChipColor[] = [
     {name: '1 Adulto', color: undefined},
     {name: 'Econômica', color: 'primary'},
