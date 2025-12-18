@@ -8,7 +8,7 @@
       </mat-button-toggle-group>
       <mat-chip-listbox (click)="openDialog()" class="horizontal-chips" aria-label="Color selection">
         @for (chip of availableColors; track chip) {
-          <mat-chip-option selected [color]="chip.color">{{chip.name}}</mat-chip-option>
+          <mat-chip-option [color]="chip.color">{{chip.name}}</mat-chip-option>
         }
       </mat-chip-listbox>
     </div>

@@ -1,1 +1,68 @@
+<section class="modal">
+  <h1 mat-dialog-title>Viajante</h1>
 
+  <mat-dialog-content>
+    <div class="selecao-idade">
+      <ul class="lista-idade">
+        <li>
+          <ul class="classificacao-idade">
+            <li><h3>Adultos</h3></li>
+            <li>(Acima de 12 anos)</li>
+            <li class="buttons-lista">
+              <button class="decremento" mat-mini-fab disabled color="primary">
+                <img src="../../../assets/icones/do_not_disturb_on.png" alt="do not disturb on">
+              </button>
+              <span>1</span>
+              <button class="incremento" mat-mini-fab disabled color="primary">
+                <img src="../../../assets/icones/add_circle.png" alt="operador de adicao">
+              </button>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="classificacao-idade">
+            <li><h3>Crianças</h3></li>
+            <li>Entre 2 e 11 anos</li>
+            <li class="buttons-lista">
+              <button mat-mini-fab color="primary" class="decremento" disabled>
+                <img src="../../../assets/icones/do_not_disturb_on.png" alt="do not disturb on">
+              </button>
+              <span>1</span>
+              <button class="incremento" mat-mini-fab color="primary" disabled>
+                <img src="../../../assets/icones/add_circle.png" alt="operador de adicao">
+              </button>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="classificacao-idade">
+            <li><h3>Bebês</h3></li>
+            <li>Até 2 anos</li>
+            <li class="buttons-lista">
+              <button class="decremento" mat-mini-fab color="primary" disabled>
+                <img src="../../../assets/icones/do_not_disturb_on.png" alt="do not disturb on">
+              </button>
+              <span>1</span>
+              <button class="incremento" mat-mini-fab color="primary" disabled>
+                <img src="../../../assets/icones/add_circle.png" alt="operador de adicao">
+              </button>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="selecao-categoria">
+      <h3>Categoria</h3>
+      <mat-chip-listbox aria-label="Cutest dog breeds">
+        @for (dog of bestBoys; track dog) {
+          <mat-chip-option>{{dog}}</mat-chip-option>
+        }
+      </mat-chip-listbox>
+    </div>
+
+  </mat-dialog-content>
+  <div class="modal-actions">
+    <button mat-flat-button color="primary">Buscar</button>
+  </div>
+</section>
